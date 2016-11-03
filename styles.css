@@ -1,0 +1,24 @@
+/*Page specifications*/
+body{
+    background-image: url(http://www.waldegraves.co.uk/wp-content/themes/waldegraves/images/sky-bg.jpg);
+}   
+
+h2{
+    color: darkblue;
+    text-align: left;
+}
+
+fieldset{
+    border-radius: 20px;
+    width: 50%;
+    min-width: 120px;
+}
+
+legend{
+    border-style: inset;
+    border-radius: 10px;
+}
+
+li{
+    list-style-type: none;
+}

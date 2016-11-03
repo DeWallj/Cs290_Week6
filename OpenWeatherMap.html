@@ -1,0 +1,50 @@
+<!--
+* Jennifer DeWall
+* CS 290_Fall
+* Week 6 Assignment: Ajax Interactions
+-->
+
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <meta charset="UTF-8">
+        <title>Week 6 Assignment</title>
+        <link rel="stylesheet" href="styles.css" type="text/css"
+    </head>
+    <body>
+
+        <!--Form that lets user input a city or a zip code-->
+        <h2>Search for current weather</h2>
+        <!--Trigger onSubmit function-->
+        <form >
+        <!--City Input-->
+        <fieldset>
+            <legend>City Input</legend>
+            <label>City:
+                <input type="text" id="textInput"name"text_input" size="25" maxlength="30">
+            </label>
+            <!-- Submit button -->
+             <input type="button" id="cityWeatherButton" value="Search by city"/>
+        </fieldset>
+        <br />
+        <!--Zip Input-->
+        <fieldset>
+            <legend>Zip Code Input</legend>
+            <label>Zip:
+                <input type="number" id="numInput" name"numerical_input" size="10" maxlength="30">
+            </label>
+            <!-- Submit button -->
+             <input type="button" id="zipWeatherButton" value="Search by zip"/>
+        </fieldset>
+        </form>
+
+        <h2>Weather results</h2>
+        <ul>
+            <li><span>Weather: </span><span id="weatherVal"></span></li>
+            <li><span>Temperature: </span><span id="tempVal"></span></li>
+            <li><span>Humidity: </span><span id="humidVal"></span></li>
+        </ul>
+        <!-- Execute JavaScript when a form is submitted -->
+        <script src="script.js"></script>
+    </body>
+</hmtl>

@@ -10,8 +10,8 @@ h2{
 
 fieldset{
     border-radius: 20px;
-    width: 50%;
-    min-width: 120px;
+    width: 30%;
+    min-width: 200px;
 }
 
 legend{
@@ -21,4 +21,12 @@ legend{
 
 li{
     list-style-type: none;
+}
+
+li span{
+    font-weight: bold;
+}
+
+label{
+    color: white;
 }

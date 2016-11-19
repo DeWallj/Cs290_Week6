@@ -2,26 +2,27 @@
 * Jennifer DeWall
 * CS 290_Fall
 * Week 6 Assignment: Ajax Interactions
+* This file contains two forms that connects to Open Weather Map
+* and submits via a GET. It lets a user input a city or a zip and
+* asynchronously shows the weather information retrieved from Open
+* Weather Map
 -->
-
 <!DOCTYPE html>
 <hmtl>
     <head>
         <meta charset="UTF-8">
-        <title>Week 6 Assignment</title>
-        <link rel="stylesheet" href="styles.css" type="text/css"
+        <title>Ajax Interactions: Form 1</title>
+        <link rel="stylesheet" href="OWMStyles.css" type="text/css">
     </head>
     <body>
-
         <!--Form that lets user input a city or a zip code-->
         <h2>Search for current weather</h2>
-        <!--Trigger onSubmit function-->
         <form >
         <!--City Input-->
         <fieldset>
             <legend>City Input</legend>
             <label>City:
-                <input type="text" id="textInput"name"text_input" size="25" maxlength="30">
+                <input type="text" id="textInput"name="text_input" size="25" maxlength="30">
             </label>
             <!-- Submit button -->
              <input type="button" id="cityWeatherButton" value="Search by city"/>
@@ -38,13 +39,15 @@
         </fieldset>
         </form>
 
+        <!--Display weather results-->
         <h2>Weather results</h2>
         <ul>
-            <li><span>Weather: </span><span id="weatherVal"></span></li>
-            <li><span>Temperature: </span><span id="tempVal"></span></li>
+            <li><span>City: </span><span id="cityNameVal"></span></li><br />
+            <li><span>Weather: </span><span id="weatherVal"></span></li><br />
+            <li><span>Temperature: </span><span id="tempVal"></span></li><br />
             <li><span>Humidity: </span><span id="humidVal"></span></li>
         </ul>
-        <!-- Execute JavaScript when a form is submitted -->
-        <script src="script.js"></script>
+        <!--JS Script-->
+        <script src="OWMScript.js"></script>
     </body>
 </hmtl>

@@ -1,0 +1,34 @@
+<!--
+* Jennifer DeWall
+* CS 290_Fall
+* Week 6 Assignment: Ajax Interactions
+* This file contains a form that is send via POST to httpbin
+* and prints to console the data received from the server
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ajax Interactions: Form 2</title>
+        <link rel="stylesheet" href="httpbinStyles.css" type="text/css">
+    </head>
+    <body>
+        <!--Form that lets user input text data-->
+        <h2>Fill in form with text data and press the Send Form button</h2>
+        <form>
+        <fieldset>
+            <textarea name="message" id="textInput" rows=s"40" cols="40" placeholder="Enter some text"></textarea>
+            <br>
+            <!--Sumbit button-->
+            <input type="button" id="httpbinButton" value="Send Form"/>
+        </fieldset>
+        </form>
+
+        <!--Display data returned-->
+        <h2>Your data was received as:</h2>
+        <div id="textVal"></div>
+
+        <!--JS Script-->
+        <script src="httpbinScript.js"></script>
+    </body>
+</html>
